@@ -4,14 +4,14 @@ class Dustbin{
         this.body =Bodies.rectangle(x,y,width,height)
         this.width = width
         this.height = height
-        this.image = loadImage("sprites/paper.png")
+        this.image = loadImage("dustbingreen.png")
         World.add(world,this.body)
 
     }
     display(){
         push()
         imageMode(CENTER);
-        image(this.image, 0, 0, this.width, this.height);
+        image(this.image,this.width, this.height);
         pop()
         
     }
