@@ -18,7 +18,7 @@ function setup() {
 	//Create the Bodies Here.
 	paperObj = new Paper(120,450,70)
 	ground = new Ground(width/2,600,width,20)
-	dustbinObj = new Dustbin(1000,60,1000,450)
+	dustbinObj = new Dustbin(1000,60,200,300)
 	
 
 
@@ -38,7 +38,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Matter.Body.applyForce(paperObj.body,paperObj.body.position,{x:250,y:-450})
+		Matter.Body.applyForce(paperObj.body,paperObj.body.position,{x:250,y:-500})
 	}
 	
 }
